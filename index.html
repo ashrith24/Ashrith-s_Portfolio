@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashrith's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+  <div class="preloader-content">
+    <div class="loader">
+      <span class="brain">🧠</span>
+    </div>
+    <p>Hold tight! My brain is loading…</p>
+  </div>
+</div>
+
+
+
+<!-- NAVBAR -->
+<section class="navsection sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blur">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold " href="https://github.com/ashrith24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+          <path
+            d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,
+              10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,
+              0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8
+              ,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z">
+          </path>
+        </svg>
+      </a>
+
+      <!-- Toggler (Hamburger / Close button) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <!-- Collapsible Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#responsibilities">Responsibilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+
+
+
+<!-- ABOUT SECTION -->
+  <section class="heroSection d-flex flex-column  full-vh">
+    <canvas id="dustCanvas" style="z-index: 0;"></canvas>
+    <div class="full-vh d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center px-4 py-5">
+           <div class="gap">
+          <div class="text-section text-center text-lg-start mb-5 mb-lg-0 me-lg-5">
+            <h5 class="herotitle">Hello, it's me</h5>
+            <h1 class="herotitle">Srinivasa Ashrith</h1>
+            <h5 class="herotitle">I’m a <span class="typed-text"></span><span class="cursor">|</span></h5>
+            <p class="hero-description mt-3">
+              Passionate designer and creative thinker, blending skills in UI/UX, visual design. 
+              Driven by a love for innovation and user-centered design, 
+              I’m committed to crafting experiences that inspire and connect.
+            </p>
+            <a href="https://drive.google.com/file/d/1OSJZePoMNCnz-7c1OHC_PmryAJIfFkQz/view?usp=sharing" class="cv-button mt-3">
+              My Resume</a>
+          </div>
+        </div>
+          <!--Profile Image Section -->
+          <div class="image-section">
+            <div class="rotating-wrapper">
+                <div class="semi-circle semi-top"></div>
+                <div class="semi-circle semi-bottom"></div>
+            </div>
+            <img src="assets/PROFILE.png" alt="Profile" class="profile-img" />
+          </div>
+    </div>
+      
+      <div class="marquee-container mt-auto container mb-lg-2 mb-5">
+        <div class="marque-gradiant"></div>
+        <div class="marquee-content">
+          <span class="marqueeText">JavaScript</span>
+          <span class="marqueeText">Html / CSS</span>
+          <span class="marqueeText">React JS</span>
+          <span class="marqueeText">Figma</span>
+          <span class="marqueeText">Node Js</span>
+          <span class="marqueeText">Java</span>
+          <span class="marqueeText">MongoDB</span>
+          <span class="marqueeText">MySQL</span>
+          <span class="marqueeText">Git</span>
+          <span class="marqueeText" aria-hidden="true">JavaScript</span>
+          <span class="marqueeText" aria-hidden="true">Html / CSS</span>
+          <span class="marqueeText" aria-hidden="true">React JS</span>
+          <span class="marqueeText" aria-hidden="true">Figma</span>
+          <span class="marqueeText" aria-hidden="true">Node Js</span>
+          <span class="marqueeText" aria-hidden="true">Java</span>
+          <span class="marqueeText" aria-hidden="true">MongoDB</span>
+          <span class="marqueeText" aria-hidden="true">MySQL</span>
+          <span class="marqueeText" aria-hidden="true">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  <!-- ABOUT SECTION -->
+  <div class="cont" id="about">
+    <div class="container">
+      <div class="skills-header">
+        <p class="skills-subtitle"></p>
+        <h2 class="skills-title" style="font-weight: bold;">About Me</h2>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <!-- Left Card -->
+      <div class="left-card">
+        <img src="assets/_1.JPG" alt="My profile" class="profile-img" />
+        <div class="left-content">
+          <h2>Hey I'm Ashrith</h2>
+          <p>I am a UI/UX Designer and Front-End Developer who loves turning ideas into visually compelling, 
+            user-friendly experiences.</p>
+          <!-- Social Icons Row -->
+          <ul class="navbar-nav d-flex flex-row justify-content-start align-items-center p-0 mt-3 gap-5" style="list-style: none;">
+              <!-- LinkedIn -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/srinivasa-ashrith-b-20388826b" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+                    <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <!-- GitHub -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/ashrith24" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 24 24">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 
+                    3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 
+                    0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.385-1.333-1.754-1.333-1.754-1.087-.744.084-.729.084-.729 
+                    1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 
+                    3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.467-1.332-5.467-5.93 
+                    0-1.31.47-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 
+                    0 0 1.005-.322 3.3 1.23a11.51 11.51 0 0 1 3-.405c1.02.005 
+                    2.045.138 3 .405 2.28-1.552 3.285-1.23 
+                    3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 
+                    1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 
+                    5.92.42.36.81 1.096.81 2.215 0 1.6-.015 2.885-.015 
+                    3.28 0 .315.21.69.825.57C20.565 22.092 24 17.592 
+                    24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                </a>
+              </li>
+              <!-- Figma -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.figma.com/@ashrith_24" target="_blank">
+                  <div style="background-color: rgba(255, 255, 255, 0); border-radius: 50%; padding: 4px; 
+                  width: 12px; height: 30px; display: flex; align-items: center; justify-content: center;">
+                          <img src="assets/FIGMA-logo.png" width="20" height="20" alt="CodeChef" />
+                  </div>
+                </a>
+              </li>
+              <!-- LeetCode -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://leetcode.com/u/Ashrith_B/" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" width="24" height="24" alt="LeetCode" />
+                </a>
+              </li>
+              <!-- CodeChef -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.codechef.com/users/ashrith_24" target="_blank">
+                  <div style="background-color: rgba(255, 255, 255, 0); border-radius: 50%; padding: 4px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/codechef.f5d6ccca.png" width="20" height="20" alt="CodeChef" />
+                  </div>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right Card -->
+      <!-- Right Card -->
+<div class="right-card">
+  <p class="description">
+    A passionate UI Designer and Frontend Developer with a strong interest in UI/UX design, frontend technologies, 
+    and currently working on Android development. Skilled in building real-world applications, solving problems 
+    through DSA, and continuously learning new technologies in the software development domain.
+  </p>
+
+  <!-- Strengths Section -->
+  <h2 class="tags-heading">Strengths</h2>
+  <div class="tags">
+      <span>Creative / Logical Thinking</span>
+      <span>Patience & Commitment</span>
+      <span>Problem Solving</span>
+      <span>Active participation in any event</span>
+  </div>
+
+  <!-- Hobbies Section -->
+  <h2 class="tags-heading">Hobbies</h2>
+  <div class="tags">
+      <span>Photography</span>
+      <span>Drawing</span>
+      <span>Music</span>
+      <span>Blogging</span>
+      <span>Traveling</span>
+      <span>Gaming</span>
+  </div>
+
+  <div class="contact-section">
+    <button class="cta" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
+      Contact Now
+    </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 🎓 EDUCATION SECTION -->
+<div class="cont">
+  <section id="education" class="education-section">
+    <!-- Section Title -->
+    <h2 class="section-title">Education</h2>
+    <div class="edu-wrapper">
+      <!-- Vertical Timeline Line (for Desktop) -->
+      <div class="edu-line" aria-hidden="true">
+        <div class="line-base"></div>
+        <div class="line-light"></div>
+      </div>
+      <!-- Curved Timeline (for Mobile) -->
+      <svg class="edu-curve" viewBox="0 0 200 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <path id="eduPath" 
+              d="M100,30 C160,90 40,190 120,260 C200,330 40,420 100,570"
+              fill="none" 
+              stroke="rgba(255,255,255,0.08)" 
+              stroke-width="4" 
+              stroke-linecap="round"/>
+        <circle id="eduDot" r="6" fill="#8ef" opacity="0.95"/>
+      </svg>
+      <!-- ================== EDUCATION CARDS ================== -->
+      <!-- 🎓 Bachelor's Degree -->
+      <article class="edu-card card-1">
+        <h3>Bachelor of Technology</h3>
+        <ul class="meta">
+          <li><strong>College:</strong> Vignan's Institute of Information Technology</li>
+          <li><strong>Branch:</strong> Computer Science Engineering</li>
+          <li><strong>University:</strong> JNTU - GV</li>
+          <li><strong>CGPA:</strong> 8.6</li>
+          <li><strong>Year:</strong> 2022 - 2026</li>
+        </ul>
+      </article>
+      <!-- 🎓 Intermediate / 12th Class -->
+      <article class="edu-card card-2">
+        <h3>12th Class (State) - MPC</h3>
+        <ul class="meta">
+          <li><strong>College:</strong> Sri Chaitanya Junior College</li>
+          <li><strong>Percentage:</strong> 90.4%</li>
+          <li><strong>Board:</strong> Board of Intermediate Education - AP</li>
+          <li><strong>Year:</strong> 2020 - 2022</li>
+        </ul>
+      </article>
+      <!-- 🎓 10th Class -->
+      <article class="edu-card card-3">
+        <h3>10th Standard</h3>
+        <ul class="meta">
+          <li><strong>School:</strong> Dr. K K R Gowtham High School</li>
+          <li><strong>Percentage:</strong> 78.8%</li>
+          <li><strong>Board:</strong> CBSE</li>
+          <li><strong>Year:</strong> 2020</li>
+        </ul>
+      </article>
+      <!-- ===================================================== -->
+    </div>
+  </section>
+</div>
+
+
+
+
+
+  <!-- Technical Skills Section -->
+  <section class="technical-skills-section" id="skills">
+    <div class="container">
+      <div class="skills-header">
+        <p class="skills-subtitle">EXPERTISE</p>
+        <h2 class="skills-title" style="font-weight: bold;">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="hover-highlight"></div>
+          <div class="skill-category">
+            <h3>Frontend & Frameworks</h3>
+            <div class="skill-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Tailwind CSS</span>
+              <span>React.js</span>
+            </div>
+          </div>    
+          <div class="skill-category">
+            <h3>Programming Lang.</h3>
+            <div class="skill-tags">
+              <span>C</span>
+              <span>C++</span>
+              <span>Python</span>
+              <span>Java</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database</h3>
+            <div class="skill-tags">
+              <span>SQL</span>
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Dev Tools</h3>
+            <div class="skill-tags">
+              <span>Visual Studio code</span>
+              <span>Git</span>
+              <span>Google Gemini API</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Design</h3>
+            <div class="skill-tags">
+              <span>Figma</span>
+              <span>Canva</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Technologies</h3>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Web</span>
+              <span>Machine learning(Basics)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects-section" id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <h1 class="projects-title" style="font-weight: bold;">Projects</h1>
+        <span class="project-counter">1/6</span>
+      </div>
+      <div class="projects-content">
+        <!-- Left Column - Project List -->
+        <div class="project-list">
+          <div class="project-item active" data-project="1">
+            <h3>Hopease</h3>
+            <p>Node.js</p>
+          </div>
+          <div class="project-item" data-project="2">
+            <h3>Breast Cell Cancer Detection</h3>
+            <p>Logistic Regression - Machine learning</p>
+          </div>
+          <div class="project-item" data-project="3">
+            <h3>Binary Breaker</h3>
+            <p>Javascript, HTML/CSS, Typescript</p>
+          </div>
+          <div class="project-item" data-project="4">
+            <h3>BitFlex</h3>
+            <p>React.js, Node.js, FFmpeg, HTML5, CSS3</p>
+          </div>
+          <div class="project-item" data-project="4">
+            <h3>Movie Search Web</h3>
+            <p>React, Tailwind CSS, TMDB API</p>
+          </div>
+          <div class="project-item" data-project="5">
+            <h3>Coffee Landing Page</h3>
+            <p>Figma</p>
+          </div>
+        </div>
+
+        <!-- Right Column - Project Details -->
+        <div class="project-details">
+          <h2 class="project-title">Hopease</h2>
+          <p class="project-description">
+           Developed a full-stack web application during a 24-hour hackathon using Next.js and Tailwind CSS.
+◦ Aimed at reducing social media addiction. The platform suggests personalized skill-building paths based on user interests,
+to promote self-growth. 
+          </p>
+          
+          <div class="project-highlights">
+            <h4>KEY HIGHLIGHTS</h4>
+            <ul>
+              <li>Reduce Social media addiction</li>
+              <li>Personalized skill-building</li>
+              <li>Self-growth</li>
+              <li>Explore your hidden talents</li>
+            </ul>
+          </div>
+          
+          <div class="project-technologies">
+            <h4>TECHNOLOGIES</h4>
+            <div class="tech-tags">
+              <span>React.js</span>
+              <span>Next.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+          
+          <button class="view-project-btn">
+            VIEW PROJECT
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="experienceSection flex-col-wise full-vh mt-5" id="responsibilities">
+    <div class="container d-flex flex-column justify-content-center mt-5">
+      <div class="">
+        <h1 class="titleFont mt-5 " style="font-weight: bold;  text-align: center;">Position of Responsibilties</h1>
+      </div>
+      <div class="experience ">
+        <div class="experienceCard row">
+          <div class="col-lg-3 col-12">
+            <p class="subtitleFont">01.</p>
+            <p class="subtitleFont" style="font-weight: bold;">Google Developer Groups - UI/UX Lead</p>
+          </div>
+          <div class="col-lg-9 col-12">
+            <p class="collapsible normalFont pt-4">Led Google Developer Groups (GDG) OnCampus community growth initiatives from 
+              October 2024 to September 2025, driving member engagement through regular technical workshops, hands-on coding 
+              sessions, and large-scale hackathons. Designed and developed the VIIT GDG Club website, created multiple event 
+              posters and promotional materials, and contributed as a photographer for select sessions hosted by other 
+              team members. Peer-to-peer learning, fostering a vibrant, collaborative, and innovation-driven community.
+            </p>
+        
+            <p class="normalFont">Images: </p>
+            
+
+            <!-- Image Boxes Section -->
+            <div class="image-boxes-section mt-3">
+              <div class="image-boxes-container">
+                <div class="image-box" data-image="project1-image1.jpg">
+                  <img src="assets/GDG_UIUX_1.jpg" alt="Project Image 1" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project1-image2.jpg">
+                  <img src="assets/GDG_UIUX_5.jpg" alt="Project Image 2" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project1-image3.jpg">
+                  <img src="assets/GDG_UIUX_2.JPG" alt="Project Image 3" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project1-image4.jpg">
+                  <img src="assets/GDG_UIUX_3.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project1-image4.jpg">
+                  <img src="assets/GDG_UIUX_4.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="experienceCard row mt-4">
+          <div class="col-lg-3 col-12">
+            <p class="subtitleFont">02.</p>
+            <p class="subtitleFont" style="font-weight: bold;">DevFest 2024 Volunteer</p>
+          </div>
+          <div class="col-lg-9 col-12">
+            <p class="collapsible normalFont pt-4">Collaborated with GDG Vizag organizers to host a large-scale developer event 
+              with 500+ attendees, contributing to the design team until the event day by creating promotional materials, visual 
+              assets, and stage branding. On the day of the event, served as a team lead for volunteers, and coordinated backstage
+               operations, coordinating speaker transitions. Also handled event logistics, and 
+               attendee support to ensure a smooth and engaging experience during the whole mainevent.</p>
+            
+            <p class="normalFont">Images: </p>
+
+            <!-- Image Boxes Section -->
+            <div class="image-boxes-section mt-3">
+              <div class="image-boxes-container">
+                <div class="image-box" data-image="project2-image1.jpg">
+                  <img src="assets/GDG_2.jpg" alt="Project Image 1" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project2-image2.jpg">
+                  <img src="assets/GDG_4.jpg" alt="Project Image 2" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project2-image3.jpg">
+                  <img src="assets/GDG_1.jpg" alt="Project Image 3" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project2-image4.jpg">
+                  <img src="assets/GDG_5.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project2-image4.jpg">
+                  <img src="assets/GDG_6.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="experienceCard row mt-4">
+          <div class="col-lg-3">
+            <p class="subtitleFont">03.</p>
+            <p class="subtitleFont" style="font-weight: bold;">IWD Hackathon</p>
+          </div>
+          <div class="col-lg-9 col-12">
+            <p class="collapsible normalFont pt-4">Volunteered at a 24-hour hackathon hosted at Vignan’s 
+              Institute of Information Technology, organized by Women Techmakers Vizag and GDG Vizag. 
+              Assisted with event logistics, on-site coordination, photography, and attendee support to 
+              ensure a smooth event flow. Contributed actively as a volunteer while simultaneously participating 
+              in the hackathon, balancing operational responsibilities with direct involvement in the competition.</p>
+           
+            <p class="normalFont">Images: </p>
+
+            <!-- Image Boxes Section -->
+            <div class="image-boxes-section mt-3">
+              <div class="image-boxes-container">
+                <div class="image-box" data-image="project3-image1.jpg">
+                  <img src="assets/IWD_1.jpg" alt="Project Image 1" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project3-image2.jpg">
+                  <img src="assets/IWD_2.jpg" alt="Project Image 2" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project3-image4.jpg">
+                  <img src="assets/IWD_32.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project3-image3.jpg">
+                  <img src="assets/IWD_3.jpg" alt="Project Image 3" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project3-image4.jpg">
+                  <img src="assets/IWD_4.JPG" alt="Project Image 4" class="image-box-img">
+                </div>
+                <div class="image-box" data-image="project3-image4.jpg">
+                  <img src="assets/IWD_5.jpg" alt="Project Image 4" class="image-box-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glass Window Modal -->
+    <div id="imageModal" class="image-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Project Image">
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+<div class="cont">
+  <h1 class="titleFont mt-5 " style="font-weight: bold; text-align: center;">Contact</h1>
+  <div class="cont contact-cont" id="contact">
+    <div class="contact-grid">
+      <div class="comb">  
+    <div class="title-row">
+      <h1>L</h1>
+      <h2>et's</h2>
+    </div>
+    <div class="title-row">
+      <h1>C</h1>
+      <h2>onnect</h2>
+    </div>
+    <p>
+      I'd love to hear from you! Whether you have a question, feedback,
+      or just want to say hello, feel free to reach out. Here's how you
+      can connect with us.
+    </p>
+  </div>
+  <!-- Middle - Contact Form -->
+  <div class="middle">
+    <div class="form-wrapper">
+      <h3>MESSAGE</h3>
+      <form id="contactForm" class="form">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+        <textarea id="message" name="message" placeholder="Message"></textarea>
+        <button type="submit" id="sendBtn">Send</button>
+      </form>
+      <p id="statusMsg"></p>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Contact mail -->
+<script>
+  emailjs.init("X4gmPhUMabVMH6pQK");  
+  document.getElementById("contactForm").addEventListener("submit", sendMail);
+
+  function sendMail(event) {
+      event.preventDefault();  
+      emailjs.send("service_ash", "template_h9h0u49", {
+          subject: document.getElementById("subject").value,
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+      })
+      .then(function(response) {
+          alert("✅ Email sent successfully!");
+          document.getElementById("contactForm").reset(); 
+          console.log("SUCCESS!", response.status, response.text);
+      }, function(error) {
+          alert("❌ Failed to send email. Check console for error.");
+          console.log("FAILED...", error);
+      });
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    }, 1000);
+  });
+  // Typing effect
+  const texts = ["UI Designer", "Frontend Developer", "DSA Enthusiast"];
+  let count = 0, index = 0, currentText = '', letter = '';
+  (function type() {
+    if (count === texts.length) count = 0;
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+    document.querySelector(".typed-text").textContent = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+      setTimeout(type, 1500);
+    } else {
+      setTimeout(type, 100);
+    }
+  })();
+
+  // Featured Projects functionality
+  const projectData = [
+    {
+      title: "Hopease",
+      description: "Developed a full-stack web application during a 24-hour hackathon using Next.js and Tailwind CSS. Aimed at reducing social media addiction. The platform suggests personalized skill-building paths based on user interests,to promote self-growth.",
+      highlights: [
+        "Reduce Social media addiction",
+        "Personalized skill-building",
+        "Self-growth",
+        "Explore your hidden talents"
+      ],
+      technologies: ["React.js", "Next.js", "Tailwind CSS"],
+      link: "https://hopease.vercel.app/"
+    },
+    {
+      title: "Breast cancer cell detection",
+      description: "Developed a Logistic Regression model with 92% accuracy to classify breast cancer as Benign or Malignant using real-world medical datasets from Kaggle. The project involved data preprocessing, feature selection, and model evaluation to ensure reliable and interpretable results.",
+      highlights: [
+        "Classification of breast cancer types: Benign vs Malignant",
+        "Achieved 92% model accuracy",
+        "Used cell attribute parameters for prediction",
+        "Dataset sourced from Kaggle"
+      ],
+      technologies: ["Machine Learning: Logistic Regression", "Python", "Pandas, NumPy", "Scikit-learn"],
+      link: "https://colab.research.google.com/drive/1NKwOsX0ktAcBLQoan3Qld7-xT4l0fgt-"
+    },
+    {
+      title: "Binary-Breaker",
+      description: "Step into the world of logic and deduction. In Binary Breaker, your mission is to guess the secret number—hidden deep in binary form—within just 5 attempts. With every guess, receive hints to guide your next move. Will your binary intuition break the code or break under pressure?",
+      highlights: [
+        "Guess the secret number between 1 and 100",
+        "5 attempts to guess the hidden number",
+        "Logic Implementation: Binary Search",
+        "Sharpen your logic and number sense"
+      ],
+      technologies: ["Javascript","HTML/CSS","Typescript"],
+      link: "https://binarybreaker.vercel.app/"
+    },
+    {
+      title: "BitFlex",
+      description: "BitFlex is a multifunctional web platform offering essential digital tools including file conversion, file extraction, compression, QR code generation from links, text extraction from images, and video/image downloads from public URLs. Designed for productivity and ease of use, BitFlex streamlines daily tasks in a single, user-friendly interface.",
+      highlights: [
+        "File format conversion (PDF, DOCX, etc.)",
+        "Archive extraction and compression",
+        "QR code generation from URLs",
+        "Text extraction from uploaded images (OCR)",
+        "Download videos/images from public URLs"
+      ],
+      technologies: ["React.js", "Node.js", "FFmpeg", "HTML5", "CSS3"],
+      link: "https://github.com/ashrith24"
+    },
+    {
+        title: "Movie Search Web",
+        description: "Designed and implemented a dynamic movie search interface using React.js and the TMDB API. The application features real-time search functionality, responsive layout, and displays movie posters, descriptions, and genre-based categorization for an enhanced browsing experience.",
+        highlights: [
+          "Real-time movie search functionality",
+          "Responsive grid-based layout",
+          "Movie posters and detailed descriptions",
+          "Genre-based movie categorization"
+        ],
+        technologies: ["React.js", "Tailwind CSS", "TMDB API"],
+        link: "https://github.com/ashrith24/Movie_Search_Web"
+    },
+    {
+      title: "Coffee Landing Page",
+      description: "Designed and developed a visually captivating landing page for a coffee brand, focusing on product presentation, elegant layout, and an engaging user interface. The page highlights the brand's identity while delivering a seamless and immersive browsing experience.",
+      highlights: [
+        "Modern and aesthetic UI design",
+        "Showcase of coffee products and brand identity",
+        "Responsive and interactive layout",
+        "Smooth user experience with visual storytelling"
+      ],
+      technologies: ["Figma", "Desktop Design"],
+      link: "https://www.figma.com/community/file/1413904498322621742/coffee-landing-page"
+    }
+  ];
+  // Initialize projects
+  document.addEventListener('DOMContentLoaded', function() {
+    const projectItems = document.querySelectorAll('.project-item');
+    const projectCounter = document.querySelector('.project-counter');
+    const projectTitle = document.querySelector('.project-title');
+    const projectDescription = document.querySelector('.project-description');
+    const viewProjectBtn = document.querySelector('.view-project-btn');
+    const projectHighlights = document.querySelector('.project-highlights ul');
+    const projectTechnologies = document.querySelector('.tech-tags');
+    
+    let currentProject = 0; 
+    updateProjectDisplay(currentProject);
+    projectItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        projectItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        updateProjectDisplay(index);
+      });
+    });
+    function updateProjectDisplay(projectIndex) {
+      const project = projectData[projectIndex];
+      currentProject = projectIndex;
+      projectCounter.textContent = `${projectIndex + 1}/6`;
+      projectTitle.textContent = project.title;
+      projectDescription.textContent = project.description;
+      projectHighlights.innerHTML = '';
+      project.highlights.forEach(highlight => {
+        const li = document.createElement('li');
+        li.textContent = highlight;
+        projectHighlights.appendChild(li);
+      });
+      projectTechnologies.innerHTML = '';
+      project.technologies.forEach(tech => {
+        const span = document.createElement('span');
+        span.textContent = tech;
+        projectTechnologies.appendChild(span);
+      });
+      if (project.link) {
+        viewProjectBtn.style.display = 'inline-flex'; 
+        viewProjectBtn.onclick = () => window.open(project.link, '_blank');  
+      } else {
+        viewProjectBtn.style.display = 'none';        
+      }
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.close-modal');
+    const imageBoxes = document.querySelectorAll('.image-box');
+    imageBoxes.forEach(box => {
+      box.addEventListener('click', function() {
+        const img = this.querySelector('.image-box-img');
+        modalImage.src = img.src;
+        modalImage.alt = img.alt;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; 
+      });
+    });
+    closeModal.addEventListener('click', function() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; 
+    });
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+</script>
+  
+  <script type="module" src="script.js"></script>
+  <script src="hero.js"></script>
+  <script src="collapse.js"></script>
+  <script type="module" src="skills.js"></script>
+  <script src="stars.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
