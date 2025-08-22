@@ -1,38 +1,37 @@
 import { skillsData } from "./constant.js";
 
-// Cache DOM elements and data
 const mainContent = document.getElementById('mainContent');
 const boxes = Array.from(document.querySelectorAll('.skillpara'));
 
-// Pre-compile content map for faster lookups
-const contentMap = new Map(
-  boxes.map(box => [
-    box,
-    skillsData[box.getAttribute('data-content')]
-  ])
-);
+if (boxes.length > 0) {
+  // Build content map
+  const contentMap = new Map(
+    boxes.map(box => [
+      box,
+      skillsData[box.getAttribute('data-content')]
+    ])
+  );
 
-// Event handler functions
-const showContent = ({ target }) => {
-  mainContent.innerHTML = contentMap.get(target);
-  // Use classList.toggle for better performance
-  mainContent.classList.toggle('active', true);
-};
+  const showContent = ({ target }) => {
+    mainContent.innerHTML = contentMap.get(target);
+    mainContent.classList.add('active');
+  };
 
-const hideContent = () => {
-  mainContent.classList.toggle('active', false); 
-};
+  const hideContent = () => {
+    mainContent.classList.remove('active');
+  };
 
-// Use event delegation for better performance
-const container = boxes[0].parentElement;
-container.addEventListener('mouseover', (e) => {
-  if (e.target.classList.contains('skillpara')) {
-    showContent(e);
-  }
-});
+  const container = boxes[0].parentElement;
 
-container.addEventListener('mouseout', (e) => {
-  if (e.target.classList.contains('skillpara')) {
-    hideContent();
-  }
-});
+  container.addEventListener('mouseover', (e) => {
+    if (e.target.classList.contains('skillpara')) {
+      showContent(e);
+    }
+  });
+
+  container.addEventListener('mouseout', (e) => {
+    if (e.target.classList.contains('skillpara')) {
+      hideContent();
+    }
+  });
+}
